@@ -11,3 +11,25 @@
     3.编写Mapper XML->Service(省略)->Controller
     
     4.可根据Mybatis API 进行开发 [Mybatis API](https://mybatis.org/mybatis-3/zh/java-api.html)
+    
+- PageHelper分页插件的使用
+
+    1.添加依赖(pagehelper-spring-boot-autoconfigure)缺少这个会出现分页失败查询出所有数据
+    ```
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
+            <version>1.2.7</version>
+        </dependency>
+    ```
+    2.请求中携带分页信息  
+    ```
+        PageHelper.startPage(pageNum,pageSize);这个设置分页信息，可以查看PageHelper源码
+        Page<T> / PageInfo<T> .. 接收分页数据
+    ```
