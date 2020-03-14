@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.lothar.entity.Goods;
 import top.lothar.repository.GoodsRepository;
-
 import java.util.Optional;
 
 
@@ -34,6 +33,18 @@ public class GoodsController {
         return result;
     }
 
+    @GetMapping("delete")
+    public String delete(Long id){
+        goodsRepository.deleteById(id);
+        return "success";
+    }
+
+    @GetMapping("update")
+    public String update(long id,String name,String description){
+        Goods goodsInfo = new Goods(id,name,description);
+        goodsRepository.save(goodsInfo);
+        return "success";
+    }
 
 
 }
