@@ -11,3 +11,8 @@
 &emsp;
 
 - [SpringBoot integrated RabbitMQ](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-rabbitmq)
+
+&emsp;
+
+- [SpringBoot integrated MyBatis](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-mybatis)
+
