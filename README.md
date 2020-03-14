@@ -9,3 +9,5 @@
 - [SpringBoot integrated Banner](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-banner)
 
 &emsp;
+
+- [SpringBoot integrated RabbitMQ](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-rabbitmq)
