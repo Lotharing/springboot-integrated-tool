@@ -40,3 +40,30 @@
     2.写一个没有方法的接口实现BaseMapper
     
     3.引入这个方法,看BaseMapper源码中的实现方法,通常不用写接口方法和对应Mapper.xml
+    
+    
+- Mybatis-generator 逆向工程生成插件
+    
+    1.pom中plugins中增加依赖
+    ````
+                <!--mybatis自动生成代码插件-->
+                <plugin>
+                    <groupId>org.mybatis.generator</groupId>
+                    <artifactId>mybatis-generator-maven-plugin</artifactId>
+                    <version>1.3.6</version>
+                    <configuration>
+                        <!-- 是否覆盖，true表示会替换生成的JAVA文件，false则不覆盖 -->
+                        <overwrite>true</overwrite>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <version>5.1.47</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+    ````
+    2.resources下建立generatorConfig文件（配置可参考文件）
+    
+    3.在Maven插件中运行此插件，在对应包下就可以生成mapper / mapper.xml / pojo 
