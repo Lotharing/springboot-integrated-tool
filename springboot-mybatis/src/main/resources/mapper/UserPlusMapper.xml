@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="top.lothar.dao.UserPlusMapper">
+
+    <resultMap id="user" type="top.lothar.entity.User"/>
+    <parameterMap id="user" type="top.lothar.entity.User"/>
+
+    <select id="getUserListPlus" resultMap="user">
+        SELECT * FROM sd_sys_user;
+    </select>
+
+    <select id="selectByMap" parameterType="java.util.Map" resultMap="user">
+        SELECT * FROM sd_sys_user WHERE account = #{map.account};
+    </select>
+
+</mapper>

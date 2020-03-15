@@ -33,3 +33,10 @@
         PageHelper.startPage(pageNum,pageSize);这个设置分页信息，可以查看PageHelper源码
         Page<T> / PageInfo<T> .. 接收分页数据
     ```
+- Mybatis-Plus
+
+    1.引入Mybatis的依赖  
+    
+    2.写一个没有方法的接口实现BaseMapper
+    
+    3.引入这个方法,看BaseMapper源码中的实现方法,通常不用写接口方法和对应Mapper.xml
