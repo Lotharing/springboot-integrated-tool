@@ -55,10 +55,12 @@ public interface UserRepository extends JpaRepository<User,Integer> {}
  @ApiImplicitParam() 用于方法,表示单独的请求参数 
  
  @ApiImplicitParams() 用于方法,包含多个 @ApiImplicitParam
-```
+ 
+````
 
 6.启动项目,访问 http://localhost:port/swagger-ui.html,之后就可以操作API 接口文档
 
 7.效果展示
-[image.png](https://i.loli.net/2020/03/15/Ggv7FiRmYLJWOn3.png)
+
+![image.png](https://i.loli.net/2020/03/15/Ggv7FiRmYLJWOn3.png)
                                         
