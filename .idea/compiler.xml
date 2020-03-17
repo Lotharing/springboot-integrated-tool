@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-jdbcTemplate" />
         <module name="springboot-elasticsearch" />
+        <module name="springboot-scheduled" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-swagger" />
         <module name="springboot-banner" />
@@ -22,6 +23,7 @@
       <module name="springboot-jdbcTemplate" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-rabbitmq" options="-parameters" />
+      <module name="springboot-scheduled" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
     </option>
   </component>
