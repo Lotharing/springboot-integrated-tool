@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-email" />
         <module name="springboot-jdbcTemplate" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-scheduled" />
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-banner" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
+      <module name="springboot-email" options="-parameters" />
       <module name="springboot-jdbcTemplate" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-rabbitmq" options="-parameters" />

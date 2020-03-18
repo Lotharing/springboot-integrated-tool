@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/springboot-swagger/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jdbcTemplate/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-scheduled/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-email/pom.xml" />
       </list>
     </option>
   </component>
