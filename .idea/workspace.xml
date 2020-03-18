@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b872a99a-a437-469c-b75d-28c2ec6c7ea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-email/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-email/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-email/springboot-email.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/EmailApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-email/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/springboot-elasticsearch/target/" />
@@ -47,54 +39,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-email/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-email/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-email/README.md">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="138">
-                <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+              <first_editor relative-caret-position="410">
+                <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/controller/MailController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#868#895#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/EmailApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -165,13 +117,13 @@
         <option value="$PROJECT_DIR$/springboot-scheduled/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-scheduled/src/main/java/top/lothar/ScheduledApplication.java" />
         <option value="$PROJECT_DIR$/springboot-scheduled/src/main/java/top/lothar/timer/Timer.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/springboot-scheduled/README.md" />
         <option value="$PROJECT_DIR$/springboot-email/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/EmailApplication.java" />
         <option value="$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/controller/MailController.java" />
         <option value="$PROJECT_DIR$/springboot-email/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/springboot-email/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -218,22 +170,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-email" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +342,7 @@
       <workItem from="1584454010902" duration="820000" />
       <workItem from="1584455336727" duration="685000" />
       <workItem from="1584536460372" duration="852000" />
-      <workItem from="1584537391930" duration="1927000" />
+      <workItem from="1584537391930" duration="2238000" />
     </task>
     <task id="LOCAL-00001" summary="ES更新删除">
       <created>1584154460882</created>
@@ -526,11 +463,25 @@
       <option name="project" value="LOCAL" />
       <updated>1584455788174</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="springboot2.2.4+Email">
+      <created>1584539385647</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1584539385647</updated>
+    </task>
+    <task id="LOCAL-00019" summary="springboot2.2.4+Email">
+      <created>1584539521517</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1584539521517</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44380000" />
+    <option name="totallyTimeSpent" value="44691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -665,7 +616,8 @@
     <MESSAGE value="springboot2.2.4+scheduled" />
     <MESSAGE value="README" />
     <MESSAGE value="project" />
-    <option name="LAST_COMMIT_MESSAGE" value="project" />
+    <MESSAGE value="springboot2.2.4+Email" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+Email" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.1.9/mybatis-plus-support-2.1.9.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.class">
@@ -950,16 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-swagger/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1058,6 +1000,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="138">
             <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="410">
+            <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
           </first_editor>
           <second_editor />
         </state>
