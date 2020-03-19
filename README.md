@@ -34,7 +34,7 @@
 
 &emsp;
 
-- [SpringBoot integrated Email](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-thymeleaf)
+- [SpringBoot integrated Thymeleaf](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-thymeleaf)
 
 &emsp;
 
