@@ -38,6 +38,7 @@
 
 &emsp;
 
+- [SpringBoot integrated Redis](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-redis)
 
 &emsp;
 
