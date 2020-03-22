@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/springboot-scheduled/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-email/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
       </list>
     </option>
   </component>

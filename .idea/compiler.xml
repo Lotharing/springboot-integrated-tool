@@ -13,6 +13,7 @@
         <module name="springboot-rabbitmq" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-swagger" />
+        <module name="springboot-redis" />
         <module name="springboot-banner" />
         <module name="springboot-mybatis" />
       </profile>
@@ -26,6 +27,7 @@
       <module name="springboot-jdbcTemplate" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-rabbitmq" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
       <module name="springboot-scheduled" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />
