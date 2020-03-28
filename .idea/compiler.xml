@@ -15,12 +15,14 @@
         <module name="springboot-swagger" />
         <module name="springboot-redis" />
         <module name="springboot-banner" />
+        <module name="springboot-aop" />
         <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-aop" options="-parameters" />
       <module name="springboot-banner" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-email" options="-parameters" />
