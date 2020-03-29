@@ -15,6 +15,8 @@
         <option value="$PROJECT_DIR$/springboot-thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
       </list>
     </option>
   </component>

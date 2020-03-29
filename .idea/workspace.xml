@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b872a99a-a437-469c-b75d-28c2ec6c7ea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-aop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/AopApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTimeAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/springboot-dubbo-client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/dubbo/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -25,6 +30,8 @@
     <ignored path="$PROJECT_DIR$/springboot-thymeleaf/target/" />
     <ignored path="$PROJECT_DIR$/springboot-redis/target/" />
     <ignored path="$PROJECT_DIR$/springboot-aop/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-dubbo-server/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-dubbo-client/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,51 +58,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/pom.xml">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="518">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/aspect/LogAspect.java">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#592#593#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTimeAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="73" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="73" />
+            <state relative-caret-position="184">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,26 +79,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/AopApplication.java">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state relative-caret-position="46">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,17 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/Application.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/entity/User.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/respository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/controller/UserSwagger.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/README.md" />
-        <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/entity/User.java" />
-        <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/top/lothar/entity/User.java" />
-        <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/top/lothar/entity/JdbcApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-swagger/src/main/java/top/lothar/SwaggerApplication.java" />
         <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/top/lothar/JdbcApplication.java" />
         <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/top/lothar/entiry/User.java" />
         <option value="$PROJECT_DIR$/springboot-jdbcTemplate/src/main/resources/application.properties" />
@@ -196,13 +164,24 @@
         <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/redis/UserKey.java" />
         <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/springboot-aop/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/AopApplication.java" />
         <option value="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/aspect/LogAspect.java" />
         <option value="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTime.java" />
         <option value="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTimeAspect.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/DubboApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/dubbo/HelloService.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -237,7 +216,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="452" />
+    <option name="x" value="287" />
     <option name="y" value="97" />
     <option name="width" value="1440" />
     <option name="height" value="774" />
@@ -248,29 +227,70 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-aop" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-aop" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-aop" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lothar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lothar" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lothar" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot-integrated-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-dubbo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +303,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-redis/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -300,11 +320,11 @@
       <recent name="entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-dubbo-client\src\main\resources" />
+      <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-dubbo-server\src\main\resources" />
       <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-redis\src\main\resources" />
       <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-thymeleaf" />
       <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-thymeleaf\src\main\resources" />
-      <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-email" />
-      <recent name="D:\IDEA\IDEAWorkSpace\springboot-integrated-tool\springboot-email\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -319,7 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AopApplication">
+  <component name="RunManager" selected="Spring Boot.DubboApplication">
     <configuration name="AopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-aop" />
       <extension name="coverage">
@@ -349,6 +369,13 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.lothar.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-dubbo-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.lothar.ServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -462,6 +489,9 @@
       <workItem from="1584887846219" duration="1288000" />
       <workItem from="1584889919817" duration="52000" />
       <workItem from="1585402028202" duration="5037000" />
+      <workItem from="1585407540687" duration="1057000" />
+      <workItem from="1585469974181" duration="757000" />
+      <workItem from="1585470765639" duration="5050000" />
     </task>
     <task id="LOCAL-00001" summary="ES更新删除">
       <created>1584154460882</created>
@@ -638,16 +668,32 @@
       <option name="project" value="LOCAL" />
       <updated>1584888103782</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="springboot2.2.4+Aop">
+      <created>1585407640709</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585407640709</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60994000" />
+    <option name="totallyTimeSpent" value="67858000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19989282" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2079314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -657,7 +703,43 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7792069" visible="true" weight="0.32368702" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7792069" weight="0.6806002" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7738478" visible="true" weight="0.38370848" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.6881029" weight="0.34726688" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12808146" weight="0.59807074" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.06966774" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3290461" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.87191856" weight="0.67416936" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.329582" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.329582" />
+      <window_info anchor="right" id="Database" order="7" weight="0.329582" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2079314" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7792069" weight="0.32368702" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7738478" weight="0.244373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -681,7 +763,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -743,7 +825,8 @@
     <MESSAGE value="springboot2.2.4+Email" />
     <MESSAGE value="springboot2.2.4+Thymeleaf" />
     <MESSAGE value="springboot2.2.4+Redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+Redis" />
+    <MESSAGE value="springboot2.2.4+Aop" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+Aop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -758,107 +841,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-jdbcTemplate/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jdbcTemplate/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jdbcTemplate/src/main/java/top/lothar/JdbcApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-swagger/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="500">
-            <caret line="64" column="63" lean-forward="true" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-scheduled/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-scheduled/src/main/java/top/lothar/ScheduledApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-scheduled/src/main/java/top/lothar/timer/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-scheduled/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.3.RELEASE/spring-context-support-5.2.3.RELEASE.jar!/org/springframework/mail/MailSender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.3.RELEASE/spring-context-support-5.2.3.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-email/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-email/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/controller/MailController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1068,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="507">
-            <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-redis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1109,42 +1081,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/EmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk/src.zip!/java/lang/annotation/ElementType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="851">
           <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/aspect/LogAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1155,9 +1095,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-aop/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="161">
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1165,10 +1122,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTimeAspect.java">
+    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="73" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="73" />
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1182,18 +1139,129 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/controller/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="139">
+            <caret line="13" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-aop/src/main/java/top/lothar/annotation/DoneTimeAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="345">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-email/src/main/java/top/lothar/EmailApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/dubbo/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/io/dubbo/springboot/spring-boot-starter-dubbo/1.0.0/spring-boot-starter-dubbo-1.0.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2905" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="273" selection-start-line="273" selection-end-line="273" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

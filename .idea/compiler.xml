@@ -6,16 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-dubbo-client" />
         <module name="springboot-email" />
         <module name="springboot-jdbcTemplate" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-scheduled" />
         <module name="springboot-rabbitmq" />
+        <module name="springboot-aop" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-swagger" />
         <module name="springboot-redis" />
         <module name="springboot-banner" />
-        <module name="springboot-aop" />
+        <module name="springboot-dubbo-server" />
         <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
@@ -24,6 +26,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-aop" options="-parameters" />
       <module name="springboot-banner" options="-parameters" />
+      <module name="springboot-dubbo-client" options="-parameters" />
+      <module name="springboot-dubbo-server" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-email" options="-parameters" />
       <module name="springboot-jdbcTemplate" options="-parameters" />
