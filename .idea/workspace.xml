@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b872a99a-a437-469c-b75d-28c2ec6c7ea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/springboot-elasticsearch/target/" />
@@ -49,43 +46,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="230">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
@@ -95,23 +59,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#308#309#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,14 +180,14 @@
         <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/DubboApplication.java" />
         <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java" />
         <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/dubbo/HelloService.java" />
         <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java" />
         <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java" />
         <option value="$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
       </list>
     </option>
   </component>
@@ -532,7 +530,7 @@
       <workItem from="1585469974181" duration="757000" />
       <workItem from="1585470765639" duration="5820000" />
       <workItem from="1585549178547" duration="1068000" />
-      <workItem from="1585555858343" duration="2038000" />
+      <workItem from="1585555858343" duration="3718000" />
     </task>
     <task id="LOCAL-00001" summary="ES更新删除">
       <created>1584154460882</created>
@@ -730,11 +728,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585489083677</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="springboot1.5.9+dubbo-server解决版本不兼容问题">
+      <created>1585557965350</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1585557965350</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71734000" />
+    <option name="totallyTimeSpent" value="73414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +753,7 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21329047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21329047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -758,7 +763,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7792069" visible="true" weight="0.5294748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7792069" visible="true" weight="0.48660237" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7738478" weight="0.38370848" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -884,7 +889,8 @@
     <MESSAGE value="springboot2.2.4+Dubbo-client" />
     <MESSAGE value="springboot2.2.4+dubbo-server" />
     <MESSAGE value="springboot2.2.4+dubbo-client" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+dubbo-client" />
+    <MESSAGE value="springboot1.5.9+dubbo-server解决版本不兼容问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot1.5.9+dubbo-server解决版本不兼容问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1252,34 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/impl/HelloServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1290,20 +1268,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/dubbo/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/java/top/lothar/ServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="184">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/ClientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="230">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
@@ -1314,11 +1308,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/java/top/lothar/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="184">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-dubbo-client/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
