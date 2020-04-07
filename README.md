@@ -44,6 +44,11 @@
 
 - [SpringBoot integrated Aop](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-aop)
 
+&emsp;
+
+- [SpringBoot integrated ShardingJDBC](https://github.com/Lotharing/springboot-integrated-tool/tree/master/springboot-sharding-jdbc)
+
+&emsp;
 
 ---
 
