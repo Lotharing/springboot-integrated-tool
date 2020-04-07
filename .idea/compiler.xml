@@ -7,18 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-dubbo-client" />
-        <module name="springboot-email" />
-        <module name="springboot-jdbcTemplate" />
-        <module name="springboot-elasticsearch" />
-        <module name="springboot-scheduled" />
-        <module name="springboot-rabbitmq" />
-        <module name="springboot-dubbo-server" />
-        <module name="springboot-thymeleaf" />
-        <module name="springboot-swagger" />
-        <module name="springboot-redis" />
         <module name="springboot-banner" />
         <module name="springboot-aop" />
+        <module name="springboot-jdbcTemplate" />
+        <module name="springboot-dubbo-server" />
+        <module name="springboot-rabbitmq" />
+        <module name="springboot-sharding-jdbc" />
+        <module name="springboot-thymeleaf" />
+        <module name="springboot-swagger" />
+        <module name="springboot-elasticsearch" />
+        <module name="springboot-scheduled" />
         <module name="springboot-mybatis" />
+        <module name="springboot-email" />
+        <module name="springboot-redis" />
       </profile>
     </annotationProcessing>
   </component>
@@ -35,6 +36,7 @@
       <module name="springboot-rabbitmq" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-scheduled" options="-parameters" />
+      <module name="springboot-sharding-jdbc" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />
     </option>
