@@ -1,7 +1,9 @@
 package top.lothar.dubbo;
 
+import top.lothar.pojo.Person;
+
 public interface HelloService {
 
-    String SayHello(String name);
+    String SayHello(Person person);
 
 }
