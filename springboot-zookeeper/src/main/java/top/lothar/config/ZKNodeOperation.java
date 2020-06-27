@@ -18,9 +18,9 @@ public class ZKNodeOperation implements Watcher {
 
         //ZKConnect.createZKNode("/testNode","123".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE);
 
-        //ZKConnect.modifyZKNode("/testNode","xyz".getBytes(),1);  //更新节点问题
+        //ZKConnect.modifyZKNode("/testNode","xyz".getBytes(),2);  //更新节点问题
 
-        ZKConnect.deleteZKNode("/testNode",0); //删除回调通知问题
+        //ZKConnect.deleteZKNode("/testNode",0); //删除回调通知问题
 
 
 

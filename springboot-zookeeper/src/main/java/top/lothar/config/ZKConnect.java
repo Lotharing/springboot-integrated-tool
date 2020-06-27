@@ -90,9 +90,8 @@ public class ZKConnect implements Watcher {
     public static void modifyZKNode(String path,byte[] data,int version){
         try {
             Stat status = zk.setData(path,data,version);
-            new Thread().sleep(2000);
             //status.get()  =  Linux get /testNode 各种信息
-            System.out.println(status.getVersion());
+            System.out.println("当前dataVersion ---->"+status.getVersion());
         } catch (KeeperException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
