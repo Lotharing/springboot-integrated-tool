@@ -2,6 +2,7 @@ package top.lothar.config;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.ACL;
+import org.apache.zookeeper.data.Stat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,7 +50,7 @@ public class ZKConnect implements Watcher {
      * @param data
      * @param acls
      */
-    public static void createZKNode(String path, byte[] data, List<ACL> acls){
+    public static void createZKNode(String path,byte[] data,List<ACL> acls){
         String result = "";
         try {
             /**
@@ -79,6 +80,41 @@ public class ZKConnect implements Watcher {
 
     }
 
+    /**
+     * 修改节点
+     * 可以封装ctx参数
+     * @param path
+     * @param data
+     * @param version
+     */
+    public static void modifyZKNode(String path,byte[] data,int version){
+        try {
+            Stat status = zk.setData(path,data,version);
+            new Thread().sleep(2000);
+            //status.get()  =  Linux get /testNode 各种信息
+            System.out.println(status.getVersion());
+        } catch (KeeperException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 删除节点
+     * 可以封装ctx
+     * @param path
+     * @param version
+     */
+    public static void deleteZKNode(String path,int version){
+        String ctx = "{'delete':'success'}";  // 例如引入sql拼写 消息队列 等
+        try {
+            zk.delete(path,version,new DeleteCallBack(),ctx);
+            new Thread().sleep(2000);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
     @Override
     public void process(WatchedEvent watchedEvent) {
         log.debug("接收到Watcher的通知",watchedEvent);

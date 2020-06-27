@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b872a99a-a437-469c-b75d-28c2ec6c7ea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/ZookeeperApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/DeleteCallBack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-zookeeper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-zookeeper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/springboot-elasticsearch/target/" />
@@ -55,47 +51,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-zookeeper/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="72" column="85" lean-forward="true" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="85" />
+            <state relative-caret-position="276">
+              <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1712#1713#0" expanded="true" />
-                <element signature="e#1767#1768#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1112#1113#0" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
+                <element signature="e#3009#3010#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java">
+        <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="345">
+              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +96,7 @@
       <find>Serializable</find>
       <find>Seria</find>
       <find>Crea</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/redis/KeyPrefix.java" />
         <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/redis/BaseKeyPrefix.java" />
         <option value="$PROJECT_DIR$/springboot-redis/src/main/java/top/lothar/vo/UserVo.java" />
@@ -171,12 +149,13 @@
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/ZookeeperApplication.java" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/zkCustor.java" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKCustor.java" />
-        <option value="$PROJECT_DIR$/springboot-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/ZookeeperApplication.java" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java" />
+        <option value="$PROJECT_DIR$/springboot-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java" />
+        <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/DeleteCallBack.java" />
         <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java" />
+        <option value="$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java" />
       </list>
     </option>
   </component>
@@ -494,7 +473,7 @@
       <workItem from="1592893020299" duration="369000" />
       <workItem from="1592895498886" duration="681000" />
       <workItem from="1592897124187" duration="382000" />
-      <workItem from="1593075683241" duration="8659000" />
+      <workItem from="1593075683241" duration="12079000" />
     </task>
     <task id="LOCAL-00001" summary="ES更新删除">
       <created>1584154460882</created>
@@ -727,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1588148501956</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="springboot2.2.4+zookeeper3.4.14 zk client create callback">
+      <created>1593252471144</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1593252471144</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125017000" />
+    <option name="totallyTimeSpent" value="128437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,7 +732,7 @@
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15755627" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16720258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -756,8 +742,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7792069" weight="0.585209" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7738478" weight="0.6891747" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7792069" visible="true" weight="0.3697749" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7738478" weight="0.37191853" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
@@ -866,7 +852,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ES更新删除" />
     <MESSAGE value="springboot2.1.7+rabbitmq3.6.8" />
     <MESSAGE value="springboot2.2.4+rabbitmq3.6.8" />
     <MESSAGE value="springboot2.2.4+mybatis2.1.0" />
@@ -891,7 +876,8 @@
     <MESSAGE value="springboot2.2.4+shardingjdbc分库分表实现" />
     <MESSAGE value="springboot2.2.4+shardingjdbc" />
     <MESSAGE value="springboot2.2.4+dubbo+zookeeper" />
-    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+dubbo+zookeeper" />
+    <MESSAGE value="springboot2.2.4+zookeeper3.4.14 zk client create callback" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot2.2.4+zookeeper3.4.14 zk client create callback" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -910,23 +896,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-sharding-jdbc/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-sharding-jdbc/src/main/java/top/lothar/config/DatabaseShardingAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -1229,16 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/ZookeeperApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateZKNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1267,13 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.3-beta/zookeeper-3.5.3-beta.jar!/org/apache/zookeeper/ZooKeeper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="247" column="18" selection-start-line="247" selection-start-column="18" selection-end-line="247" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1281,41 +1233,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.5.3-beta/zookeeper-3.5.3-beta.jar!/org/apache/zookeeper/ZooKeeper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="330" column="16" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-zookeeper/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="472">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/ZookeeperApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar!/org/apache/zookeeper/ZooKeeper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="350" column="16" selection-start-line="350" selection-start-column="16" selection-end-line="350" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/DeleteCallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="72" column="85" lean-forward="true" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="85" />
+        <state relative-caret-position="276">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1712#1713#0" expanded="true" />
-            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/ZKNodeOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state relative-caret-position="345">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1112#1113#0" expanded="true" />
             <element signature="e#1138#1139#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-zookeeper/src/main/java/top/lothar/config/CreateCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
