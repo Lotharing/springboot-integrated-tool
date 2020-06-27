@@ -12,6 +12,7 @@
         <module name="springboot-jdbcTemplate" />
         <module name="springboot-dubbo-server" />
         <module name="springboot-rabbitmq" />
+        <module name="springboot-zookeeper" />
         <module name="springboot-sharding-jdbc" />
         <module name="springboot-thymeleaf" />
         <module name="springboot-swagger" />
@@ -39,6 +40,7 @@
       <module name="springboot-sharding-jdbc" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
       <module name="springboot-thymeleaf" options="-parameters" />
+      <module name="springboot-zookeeper" options="-parameters" />
     </option>
   </component>
 </project>

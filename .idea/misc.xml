@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-sharding-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-zookeeper/pom.xml" />
       </list>
     </option>
   </component>
