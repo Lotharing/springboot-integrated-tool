@@ -14,14 +14,17 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import top.lothar.entity.Live;
 import top.lothar.entity.Teacher;
+import top.lothar.esenum.EnumElasticsearchOperator;
 import top.lothar.esenum.EsTypeEnum;
 import top.lothar.repository.LiveRepository;
 import top.lothar.repository.TeacherRepository;
 import top.lothar.service.ElasticSearchService;
 import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
+import top.lothar.vo.ElasticsearchRequestVO;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -61,7 +64,8 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         String indexName = EsTypeEnum.getIndexByCode(type);
         if (StringUtils.isEmpty(indexName)) {
             return new EntityResultResponse<>(EnumSystem.ERROR);
-        }        try {
+        }
+        try {
             if (EsTypeEnum.TEACHER.code() == type) {
                 Optional<Teacher> eDo = teacherRepository.findById(id);
                 return new EntityResultResponse<>(eDo);
@@ -81,16 +85,16 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
      * @return
      */
     @Override
-    public EntityResultResponse<Object> deleteById(Integer type) {
+    public EntityResultResponse<Object> deleteById(Integer type,Integer id) {
         String indexName = EsTypeEnum.getIndexByCode(type);
         if (StringUtils.isEmpty(indexName)) {
             return new EntityResultResponse<>(EnumSystem.ERROR);
         }
         try {
             if (EsTypeEnum.TEACHER.code() == type) {
-                elasticsearchRestTemplate.deleteIndex(Teacher.class);
+                teacherRepository.deleteById(id);
             } else if (EsTypeEnum.LIVE.code() == type) {
-                elasticsearchRestTemplate.deleteIndex(Live.class);
+                liveRepository.deleteById(id);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -123,7 +127,45 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
     @Override
     public EntityResultResponse<Object> updateByIds(Integer type, List<Integer> idList) {
-        return null;
+        String indexName = EsTypeEnum.getIndexByCode(type);
+        if (StringUtils.isEmpty(indexName)) {
+            return new EntityResultResponse<>(EnumSystem.ERROR);
+        }
+        try {
+            if (idList != null && !idList.isEmpty()) {
+                // ID不为空 先清一遍 [Teacher id 先清理 在添加 保持最新]
+                idList.forEach(item -> {
+                    deleteById(type, item);
+                });
+            }
+            if (EsTypeEnum.TEACHER.code() == type) {
+                //校验索引是否存在
+                if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
+                    elasticsearchRestTemplate.createIndex(Teacher.class);
+                }
+                //TODO 根据IDList查询数据库Teacher数据,暂时写死
+                List<Teacher> list = new ArrayList<>();
+                for (int i = 1; i < 100; i++){
+                    Teacher teacher = new Teacher(i,"中国"+i,System.currentTimeMillis()+"-"+i);
+                    list.add(teacher);
+                }
+                if (idList == null) {
+                    teacherRepository.deleteAll();
+                }
+                if (list != null && !list.isEmpty()) {
+                    teacherRepository.saveAll(list);
+                }
+            } else if (EsTypeEnum.LIVE.code() == type) {
+                if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
+                    elasticsearchRestTemplate.createIndex(Live.class);
+                }
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new EntityResultResponse<>();
     }
 
     @Override
@@ -176,7 +218,36 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
     @Override
     public EntityResultResponse<Object> esIndexOperator(String jsonData) {
-        return null;
+        try {
+            // 解析数据类型
+            ElasticsearchRequestVO requestVO = JSON.parseObject(jsonData, ElasticsearchRequestVO.class);
+            if (requestVO != null) {
+                if (StringUtils.isEmpty(requestVO.getReqOperator()) || StringUtils.isEmpty(requestVO.getReqType())) {
+                    return new EntityResultResponse<>(EnumSystem.ERROR);
+                }
+                int reqType = requestVO.getReqType();
+                int reqOperator = requestVO.getReqOperator();
+                Integer reqId = requestVO.getId();
+
+                //删除操作
+                if (reqOperator == EnumElasticsearchOperator.ELASTIC_DELETE.type()) {
+                    // 删除
+                    deleteById(reqType, reqId);
+                } else if (reqOperator == EnumElasticsearchOperator.ELASTIC_UPDATE.type() || reqOperator == EnumElasticsearchOperator.ELASTIC_ADD.type()) {
+                    // 更新/新增操作
+                    List<Integer> idList = new ArrayList<>();
+                    if (!StringUtils.isEmpty(reqId)) {
+                        idList.add(reqId);
+                    } else {
+                        idList = null;
+                    }
+                    updateByIds(reqType, idList);
+                }
+            }
+            return new EntityResultResponse<>();
+        } catch (Exception e) {
+            return new EntityResultResponse<>(EnumSystem.ERROR);
+        }
     }
 
 

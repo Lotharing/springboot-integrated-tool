@@ -77,7 +77,7 @@ public class Teacher implements Serializable {
         fields.put("name", new Float(6.0));
         fields.put("remark", new Float(1.0));
 
-        QueryBuilder queryBuilders=  QueryBuilders.multiMatchQuery(keyword, "name", "userpost").fields(fields);
+        QueryBuilder queryBuilders=  QueryBuilders.multiMatchQuery(keyword, "name", "remark").fields(fields);
         SearchSourceBuilder searchSourceBuilder = ElasticUtil.initSearchSourceBuilder(queryBuilders, page, size);
         request.source(searchSourceBuilder);
         return request;

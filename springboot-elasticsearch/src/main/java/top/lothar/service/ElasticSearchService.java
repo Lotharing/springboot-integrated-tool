@@ -14,7 +14,7 @@ public interface ElasticSearchService {
 
     EntityResultResponse<Object> findById(Integer type, Integer id);
 
-    EntityResultResponse<Object> deleteById(Integer type);
+    EntityResultResponse<Object> deleteById(Integer type,Integer id);
 
     EntityResultResponse<Object> createIndex(Integer type);
 
