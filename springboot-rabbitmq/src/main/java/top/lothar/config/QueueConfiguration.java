@@ -16,11 +16,13 @@ public class QueueConfiguration {
 
     /**
      * Direct模式
+     * 在启动的时候，这些 queue 会注册进rabbitmq
      */
     @Bean
     public Queue getFirstQueue(){
         return new Queue(RabbitMQConstants.MY_FIRST_QUEUE,true);
     }
+
 
     /**
      * Topic模式 根据RoutineKey去绑定接收的消息

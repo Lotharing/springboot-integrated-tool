@@ -1,0 +1,27 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: rabbit-mq-producer
+  rabbitmq:
+    host: 39.96.21.162
+    virtual-host: /
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 2000
+        acknowledge-mode: manual # 手动ack模式
+        concurrency: 1 # 最少消费者数量
+        max-concurrency: 10 # 最大消费者数量
+    # 设置为true时。当消息投递到Exchange后，会回调confirm()方法进行通知生产者
+    publisher-confirms: true
+    # 设置为true时。当消息匹配到Queue并且失败时，会通过回调returnedMessage()方法返回消息
+  # publisher-returns：
+    # 设置为true时。指定消息在没有被队列接收时会通过回调returnedMessage()方法退回。
+    template.mandatory: true
+  # spring.rabbitmq.publisher-returns: true

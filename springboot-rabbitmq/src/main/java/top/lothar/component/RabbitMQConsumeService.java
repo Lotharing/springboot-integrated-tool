@@ -1,22 +1,25 @@
 package top.lothar.component;
 
+
 import top.lothar.constants.RabbitMQConstants;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class RabbitMQConsumeService {
 
+
     /**
      * Direct模式
-     * @param list
+     * @param map
      */
-    @RabbitListener(queues = RabbitMQConstants.MY_FIRST_QUEUE)
-    public void consumeFirstMQueue(List list){
-        System.out.println("第一消息队列Direct模式处理"+list.toString());
-    }
+//    @RabbitListener(queues = RabbitMQConstants.MY_FIRST_QUEUE)
+//    public void consumeFirstMQueue(Map map){
+//        System.out.println("第一消息队列Direct模式处理"+map.toString());
+//    }
 
     /**
      * Topic模式
