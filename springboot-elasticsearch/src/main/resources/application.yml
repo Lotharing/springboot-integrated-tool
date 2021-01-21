@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+  elasticsearch:
+    rest:
+      uris: localhost:9200
+      #username:
+      #password:
+  # UTF-8 格式
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true

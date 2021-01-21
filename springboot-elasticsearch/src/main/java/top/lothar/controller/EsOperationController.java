@@ -58,8 +58,8 @@ public class EsOperationController {
      * 根据关键字全局搜索引擎入口查询
      * @return
      */
-    @GetMapping("query")
-    public EntityResultResponse queryByFilterKeyWord(@RequestParam("keyword")String keyword){
+    @GetMapping(value = "query",produces = "application/json;charset=utf-8")
+    public EntityResultResponse<Object> queryByFilterKeyWord(@RequestParam("keyword")String keyword){
         return searchService.queryByFilterKeyWord(1,5,keyword,1,10);
     }
 
