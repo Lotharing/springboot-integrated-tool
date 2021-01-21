@@ -25,10 +25,7 @@ import top.lothar.vo.ElasticsearchRequestVO;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * <h1>搜索引擎操作逻辑接口实现</h1>
@@ -159,8 +156,18 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                 if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
                     elasticsearchRestTemplate.createIndex(Live.class);
                 }
-
-
+                //TODO 根据IDList查询数据库Live数据,暂时写死
+                List<Live> list = new ArrayList<>();
+                for (long i = 1; i < 100; i++){
+                    Live live = new Live(i,"课程"+i,new BigDecimal(99.00),"美国",new Date());
+                    list.add(live);
+                }
+                if (idList == null){
+                    liveRepository.deleteAll();
+                }
+                if (list!=null && !list.isEmpty()){
+                    liveRepository.saveAll(list);
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -179,7 +186,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             if (EsTypeEnum.TEACHER.code() == type) {
                 return searchEs(elasticsearchRestTemplate.getClient(), Teacher.getSearchRequest(keyword, page, size), c);
             } else if (EsTypeEnum.LIVE.code() == type) {
-                //return searchEs(elasticsearchRestTemplate.getClient(), Live.getSearchRequest(keyword, page, size), c);
+                return searchEs(elasticsearchRestTemplate.getClient(), Live.getSearchRequest(keyword, page, size), c);
             }
         } catch (Exception e) {
             e.printStackTrace();

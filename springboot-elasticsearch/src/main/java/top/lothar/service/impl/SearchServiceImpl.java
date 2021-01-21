@@ -3,6 +3,7 @@ package top.lothar.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import top.lothar.entity.Live;
 import top.lothar.entity.Teacher;
 import top.lothar.esenum.EsTypeEnum;
 import top.lothar.esenum.SearchTypeEnum;
@@ -70,7 +71,7 @@ public class SearchServiceImpl implements SearchService {
         }
 
         /**
-         * 进行查询
+         * 导师查询
          */
         if (teacher){
             List<Teacher> tList = elasticSearchService.searchCommon(EsTypeEnum.TEACHER.code(), filter, pageNo, size, Teacher.class, null);
@@ -83,6 +84,12 @@ public class SearchServiceImpl implements SearchService {
                 //最上层搜索结果包装
                 resp.setTeacherList(teacherResp);
             }
+        }
+        // 课程查询
+        if (live){
+            List<Live> liveList = elasticSearchService.searchCommon(EsTypeEnum.LIVE.code(), filter, pageNo, size, Live.class,null);
+            // 省略简化返回
+            resp.setLiveList(liveList);
         }
 
         //TODO 继续进行 直播课 的查询

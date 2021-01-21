@@ -60,7 +60,7 @@ public class EsOperationController {
      */
     @GetMapping(value = "query",produces = "application/json;charset=utf-8")
     public EntityResultResponse<Object> queryByFilterKeyWord(@RequestParam("keyword")String keyword){
-        return searchService.queryByFilterKeyWord(1,5,keyword,1,10);
+        return searchService.queryByFilterKeyWord(1,0,keyword,1,10);
     }
 
     /**
@@ -70,10 +70,11 @@ public class EsOperationController {
     @GetMapping("set/teacher/data")
     public EntityResultResponse setTeacherDataToES(){
         ElasticsearchRequestVO elasticsearchRequestVO = new ElasticsearchRequestVO();
-        elasticsearchRequestVO.setReqType(1);//老师
-        //一般是课程ID 或者 老师ID 在索引封装操作中 对此ID进行遍历删除 之后在同步相关数据 保持修改过的信息保持ES同步保持最新
+        // 1 老师 0 直播课
+        elasticsearchRequestVO.setReqType(0);
+        // 一般是课程ID 或者 老师ID 在索引封装操作中 对此ID进行遍历删除 之后在同步相关数据 保持修改过的信息保持ES同步保持最新
         elasticsearchRequestVO.setId(1);
-        //操作封装 0 ADD 1 UPDATE 2 DELETE
+        // 操作封装 0 ADD 1 UPDATE 2 DELETE
         elasticsearchRequestVO.setReqOperator(0);
         return elasticSearchService.esIndexOperator(JSONObject.toJSONString(elasticsearchRequestVO));
     }
