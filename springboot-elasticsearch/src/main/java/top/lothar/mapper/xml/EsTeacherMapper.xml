@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.lothar.mapper.EsTeacherMapper">
+
+    <insert id="insertTeacherInfo" parameterType="java.lang.String">
+        insert into es_teacher(name,remark)
+        values (#{name},#{remark})
+    </insert>
+
+    <select id="getTeacherInfo" resultType="top.lothar.model.EsTeacher">
+        select * from es_teacher where id = #{id}
+    </select>
+</mapper>

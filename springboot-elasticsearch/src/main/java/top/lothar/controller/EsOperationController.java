@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import top.lothar.entity.Teacher;
 import top.lothar.service.ElasticSearchService;
 import top.lothar.service.SearchService;
+import top.lothar.service.TeacherService;
 import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
 import top.lothar.vo.ElasticsearchRequestVO;
@@ -27,6 +28,9 @@ public class EsOperationController {
 
     @Autowired
     private SearchService searchService;
+
+    @Autowired
+    private TeacherService teacherService;
 
     /**
      * 建立索引 根据封装的 Teacher / Live 的 Es对应配置对象 建立索引
@@ -87,6 +91,15 @@ public class EsOperationController {
     @GetMapping("get/teacher")
     public EntityResultResponse findById(@RequestParam("id")Integer id){
         return elasticSearchService.findById(1,id);
+    }
+
+    /**
+     * 添加数据库导师信息
+     * @return
+     */
+    @GetMapping("add/teacher")
+    public EntityResultResponse addTeacher(){
+        return teacherService.addTeacherInfo();
     }
 
 

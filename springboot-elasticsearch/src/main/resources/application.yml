@@ -17,3 +17,16 @@ spring:
       force: true
       charset: UTF-8
       enabled: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.96.21.162:3306/sdims?#useUnicode=true&noAccessToProcedureBodies=true&useSSL=false&allowMultiQueries=true
+    username: lutong
+    password: Lutong~918
+
+mybatis:
+  type-aliases-package: top.lothar.model
+  mapper-locations: top/lothar/mapper/xml/*.xml
+
+  ## 驼峰命名
+  ## mybatis.configuration.map-underscore-to-camel-case=true
+
