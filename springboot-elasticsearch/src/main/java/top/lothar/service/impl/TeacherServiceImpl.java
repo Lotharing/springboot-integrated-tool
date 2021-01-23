@@ -2,9 +2,8 @@ package top.lothar.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import top.lothar.entity.Teacher;
 import top.lothar.mapper.EsTeacherMapper;
-import top.lothar.model.EsTeacher;
+import top.lothar.model.Teacher;
 import top.lothar.service.TeacherService;
 import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
@@ -32,7 +31,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public List<EsTeacher> getTeacherInfo() {
+    public List<Teacher> getTeacherInfo() {
         return esTeacherMapper.getTeacherInfo();
     }
 }

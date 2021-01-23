@@ -1,8 +1,8 @@
 package top.lothar.vo;
 
 import lombok.Data;
-import top.lothar.entity.Live;
-import top.lothar.entity.Teacher;
+import top.lothar.entity.EsLive;
+import top.lothar.entity.EsTeacher;
 
 import java.util.List;
 
@@ -11,6 +11,6 @@ import java.util.List;
  */
 @Data
 public class SearchResp {
-    List<Teacher> teacherList;
-    List<Live> LiveList;
+    List<EsTeacher> esTeacherList;
+    List<EsLive> esLiveList;
 }

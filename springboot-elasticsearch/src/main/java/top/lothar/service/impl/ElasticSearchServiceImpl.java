@@ -12,11 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import top.lothar.entity.Live;
-import top.lothar.entity.Teacher;
+import top.lothar.entity.EsLive;
+import top.lothar.entity.EsTeacher;
 import top.lothar.esenum.EnumElasticsearchOperator;
 import top.lothar.esenum.EsTypeEnum;
-import top.lothar.model.EsTeacher;
+import top.lothar.model.Teacher;
 import top.lothar.repository.LiveRepository;
 import top.lothar.repository.TeacherRepository;
 import top.lothar.service.ElasticSearchService;
@@ -25,9 +25,7 @@ import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
 import top.lothar.vo.ElasticsearchRequestVO;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -70,10 +68,10 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         }
         try {
             if (EsTypeEnum.TEACHER.code() == type) {
-                Optional<Teacher> eDo = teacherRepository.findById(id);
+                Optional<EsTeacher> eDo = teacherRepository.findById(id);
                 return new EntityResultResponse<>(eDo);
             } else if (EsTypeEnum.LIVE.code() == type) {
-                Optional<Live> eDo = liveRepository.findById(id);
+                Optional<EsLive> eDo = liveRepository.findById(id);
                 return new EntityResultResponse<>(eDo);
             }
         } catch (Exception e) {
@@ -118,9 +116,9 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         }
         try {
             if (EsTypeEnum.TEACHER.code() == type) {
-                createIndex(indexName, Teacher.class);
+                createIndex(indexName, EsTeacher.class);
             } else if (EsTypeEnum.LIVE.code() == type) {
-                createIndex(indexName, Live.class);
+                createIndex(indexName, EsLive.class);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -144,13 +142,13 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
             if (EsTypeEnum.TEACHER.code() == type) {
                 //校验索引是否存在
                 if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
-                    elasticsearchRestTemplate.createIndex(Teacher.class);
+                    elasticsearchRestTemplate.createIndex(EsTeacher.class);
                 }
                 // 从数据库查处所有老师信息并存储Es
-                List<Teacher> list = new ArrayList<>();
-                List<EsTeacher> teacherInfo = teacherService.getTeacherInfo();
+                List<EsTeacher> list = new ArrayList<>();
+                List<Teacher> teacherInfo = teacherService.getTeacherInfo();
                 for (int i = 0; i < teacherInfo.size(); i++){
-                    list.add(new Teacher(teacherInfo.get(i).getId(),teacherInfo.get(i).getName(),teacherInfo.get(i).getRemark()));
+                    list.add(new EsTeacher(teacherInfo.get(i).getId(),teacherInfo.get(i).getName(),teacherInfo.get(i).getRemark()));
                 }
                 if (idList == null) {
                     teacherRepository.deleteAll();
@@ -160,13 +158,13 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                 }
             } else if (EsTypeEnum.LIVE.code() == type) {
                 if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
-                    elasticsearchRestTemplate.createIndex(Live.class);
+                    elasticsearchRestTemplate.createIndex(EsLive.class);
                 }
                 //TODO 根据IDList查询数据库Live数据,暂时写死
-                List<Live> list = new ArrayList<>();
+                List<EsLive> list = new ArrayList<>();
                 for (long i = 1; i < 200; i++){
-                    Live live = new Live(i,"课程"+i,new BigDecimal(99.00),"赵路通",new Date());
-                    list.add(live);
+                    EsLive esLive = new EsLive(i,"课程"+i,new BigDecimal(99.00),"赵路通",new Date());
+                    list.add(esLive);
                 }
                 if (idList == null){
                     liveRepository.deleteAll();
@@ -190,9 +188,9 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         }
         try {
             if (EsTypeEnum.TEACHER.code() == type) {
-                return searchEs(elasticsearchRestTemplate.getClient(), Teacher.getSearchRequest(keyword, page, size), c);
+                return searchEs(elasticsearchRestTemplate.getClient(), EsTeacher.getSearchRequest(keyword, page, size), c);
             } else if (EsTypeEnum.LIVE.code() == type) {
-                return searchEs(elasticsearchRestTemplate.getClient(), Live.getSearchRequest(keyword, page, size), c);
+                return searchEs(elasticsearchRestTemplate.getClient(), EsLive.getSearchRequest(keyword, page, size), c);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -217,7 +215,7 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
         }
         try {
             if (EsTypeEnum.TEACHER.code() == type) {
-                List<Teacher> tList = searchEs(elasticsearchRestTemplate.getClient(), Teacher.getSearchRequest(keyword, page, size), Teacher.class);
+                List<EsTeacher> tList = searchEs(elasticsearchRestTemplate.getClient(), EsTeacher.getSearchRequest(keyword, page, size), EsTeacher.class);
                 return new EntityResultResponse<>(tList);
             } else if (EsTypeEnum.LIVE.code() == type) {
                 //List<Live> list = searchEs(elasticsearchRestTemplate.getClient(), Live.getSearchRequest(keyword, page, size, null), EsZhiboDO.class);

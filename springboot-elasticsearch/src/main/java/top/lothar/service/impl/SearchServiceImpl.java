@@ -3,8 +3,8 @@ package top.lothar.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import top.lothar.entity.Live;
-import top.lothar.entity.Teacher;
+import top.lothar.entity.EsLive;
+import top.lothar.entity.EsTeacher;
 import top.lothar.esenum.EsTypeEnum;
 import top.lothar.esenum.SearchTypeEnum;
 import top.lothar.service.ElasticSearchService;
@@ -74,22 +74,22 @@ public class SearchServiceImpl implements SearchService {
          * 导师查询
          */
         if (teacher){
-            List<Teacher> tList = elasticSearchService.searchCommon(EsTypeEnum.TEACHER.code(), filter, pageNo, size, Teacher.class, null);
+            List<EsTeacher> tList = elasticSearchService.searchCommon(EsTypeEnum.TEACHER.code(), filter, pageNo, size, EsTeacher.class, null);
             if (tList != null && !tList.isEmpty()) {
                 //因为是DEMO级别,这里可以把复杂的字段多的 Teacher 简化一些 返回
-                List<Teacher> teacherResp = new ArrayList<>();
+                List<EsTeacher> esTeacherResp = new ArrayList<>();
                 tList.forEach(item -> {
-                    teacherResp.add(item);
+                    esTeacherResp.add(item);
                 });
                 //最上层搜索结果包装
-                resp.setTeacherList(teacherResp);
+                resp.setEsTeacherList(esTeacherResp);
             }
         }
         // 课程查询
         if (live){
-            List<Live> liveList = elasticSearchService.searchCommon(EsTypeEnum.LIVE.code(), filter, pageNo, size, Live.class,null);
+            List<EsLive> esLiveList = elasticSearchService.searchCommon(EsTypeEnum.LIVE.code(), filter, pageNo, size, EsLive.class,null);
             // 省略简化返回
-            resp.setLiveList(liveList);
+            resp.setEsLiveList(esLiveList);
         }
 
         //TODO 继续进行 直播课 的查询

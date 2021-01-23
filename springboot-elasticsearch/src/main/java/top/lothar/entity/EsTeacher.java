@@ -45,7 +45,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(indexName = "project_teacher",shards = 1,replicas = 0,type = "teacher",useServerConfiguration = true, createIndex = true)
-public class Teacher implements Serializable {
+public class EsTeacher implements Serializable {
 
     //主键
     @Id

@@ -7,7 +7,7 @@
         values (#{name},#{remark})
     </insert>
 
-    <select id="getTeacherInfo" resultType="top.lothar.model.EsTeacher">
+    <select id="getTeacherInfo" resultType="top.lothar.model.Teacher">
         select * from es_teacher;
     </select>
 </mapper>
