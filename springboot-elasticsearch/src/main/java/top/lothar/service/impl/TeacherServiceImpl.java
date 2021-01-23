@@ -2,11 +2,14 @@ package top.lothar.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import top.lothar.entity.Teacher;
 import top.lothar.mapper.EsTeacherMapper;
 import top.lothar.model.EsTeacher;
 import top.lothar.service.TeacherService;
 import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
+
+import java.util.List;
 
 /**
  * <h1></h1>
@@ -26,5 +29,10 @@ public class TeacherServiceImpl implements TeacherService {
             esTeacherMapper.insertTeacherInfo("路通-"+i,"帅爆炸了-"+i);
         }
         return new EntityResultResponse<Object>(EnumSystem.SUCCESS);
+    }
+
+    @Override
+    public List<EsTeacher> getTeacherInfo() {
+        return esTeacherMapper.getTeacherInfo();
     }
 }

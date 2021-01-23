@@ -16,9 +16,11 @@ import top.lothar.entity.Live;
 import top.lothar.entity.Teacher;
 import top.lothar.esenum.EnumElasticsearchOperator;
 import top.lothar.esenum.EsTypeEnum;
+import top.lothar.model.EsTeacher;
 import top.lothar.repository.LiveRepository;
 import top.lothar.repository.TeacherRepository;
 import top.lothar.service.ElasticSearchService;
+import top.lothar.service.TeacherService;
 import top.lothar.util.EntityResultResponse;
 import top.lothar.util.EnumSystem;
 import top.lothar.vo.ElasticsearchRequestVO;
@@ -49,6 +51,9 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 
     @Autowired
     private TeacherRepository teacherRepository;
+
+    @Autowired
+    private TeacherService teacherService;
 
     /**
      * 查找索引
@@ -141,11 +146,11 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                 if (!elasticsearchRestTemplate.indexExists(EsTypeEnum.getIndexByCode(type))) {
                     elasticsearchRestTemplate.createIndex(Teacher.class);
                 }
-                //TODO 根据IDList查询数据库Teacher数据,暂时写死
+                // 从数据库查处所有老师信息并存储Es
                 List<Teacher> list = new ArrayList<>();
-                for (int i = 1; i < 100; i++){
-                    Teacher teacher = new Teacher(i,"中国"+i,System.currentTimeMillis()+"-"+i);
-                    list.add(teacher);
+                List<EsTeacher> teacherInfo = teacherService.getTeacherInfo();
+                for (int i = 0; i < teacherInfo.size(); i++){
+                    list.add(new Teacher(teacherInfo.get(i).getId(),teacherInfo.get(i).getName(),teacherInfo.get(i).getRemark()));
                 }
                 if (idList == null) {
                     teacherRepository.deleteAll();

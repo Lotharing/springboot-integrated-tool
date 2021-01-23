@@ -1,9 +1,10 @@
 package top.lothar.mapper;
 
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import top.lothar.model.EsTeacher;
+
+import java.util.List;
 
 /**
  * <h1></h1>
@@ -21,8 +22,7 @@ public interface EsTeacherMapper {
     void insertTeacherInfo(@Param("name")String name,@Param("remark")String remark);
     /**
      * 获取教师信息
-     * @param id
      * @return
      */
-    EsTeacher getTeacherInfo(@Param("id")Integer id);
+    List<EsTeacher> getTeacherInfo();
 }

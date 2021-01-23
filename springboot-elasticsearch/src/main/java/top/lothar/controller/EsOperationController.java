@@ -69,17 +69,22 @@ public class EsOperationController {
 
     /**
      * TODO 暂时报漏接口 , 后期可通过MQ传递数据存储ES
+     * @param reqType 0 直播课 1 老师
+     * @param id 1
+     * @param operator 0 ADD 1 UPDATE 2 DELETE
      * @return
      */
     @GetMapping("set/teacher/data")
-    public EntityResultResponse setTeacherDataToES(){
+    public EntityResultResponse setTeacherDataToES(@RequestParam("reqType")Integer reqType,
+                                                   @RequestParam("id")Integer id,
+                                                   @RequestParam("operator")Integer operator){
         ElasticsearchRequestVO elasticsearchRequestVO = new ElasticsearchRequestVO();
         // 1 老师 0 直播课
-        elasticsearchRequestVO.setReqType(0);
+        elasticsearchRequestVO.setReqType(reqType);
         // 一般是课程ID 或者 老师ID 在索引封装操作中 对此ID进行遍历删除 之后在同步相关数据 保持修改过的信息保持ES同步保持最新
-        elasticsearchRequestVO.setId(1);
+        elasticsearchRequestVO.setId(id);
         // 操作封装 0 ADD 1 UPDATE 2 DELETE
-        elasticsearchRequestVO.setReqOperator(0);
+        elasticsearchRequestVO.setReqOperator(operator);
         return elasticSearchService.esIndexOperator(JSONObject.toJSONString(elasticsearchRequestVO));
     }
 

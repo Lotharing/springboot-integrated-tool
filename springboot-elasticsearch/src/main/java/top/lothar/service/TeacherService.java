@@ -1,6 +1,9 @@
 package top.lothar.service;
 
+import top.lothar.model.EsTeacher;
 import top.lothar.util.EntityResultResponse;
+
+import java.util.List;
 
 /**
  * <h1></h1>
@@ -14,4 +17,10 @@ public interface TeacherService {
      * @return
      */
     EntityResultResponse<Object> addTeacherInfo();
+
+    /**
+     * 获取导师信息
+     * @return
+     */
+    List<EsTeacher> getTeacherInfo();
 }

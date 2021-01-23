@@ -8,6 +8,6 @@
     </insert>
 
     <select id="getTeacherInfo" resultType="top.lothar.model.EsTeacher">
-        select * from es_teacher where id = #{id}
+        select * from es_teacher;
     </select>
 </mapper>
