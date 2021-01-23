@@ -25,6 +25,7 @@ import top.lothar.vo.ElasticsearchRequestVO;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -158,8 +159,8 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
                 }
                 //TODO 根据IDList查询数据库Live数据,暂时写死
                 List<Live> list = new ArrayList<>();
-                for (long i = 1; i < 100; i++){
-                    Live live = new Live(i,"课程"+i,new BigDecimal(99.00),"美国",new Date());
+                for (long i = 1; i < 200; i++){
+                    Live live = new Live(i,"课程"+i,new BigDecimal(99.00),"赵路通",new Date());
                     list.add(live);
                 }
                 if (idList == null){
