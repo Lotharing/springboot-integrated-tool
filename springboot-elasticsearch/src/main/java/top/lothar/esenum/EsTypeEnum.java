@@ -7,7 +7,8 @@ import org.springframework.util.StringUtils;
  */
 public enum EsTypeEnum {
     LIVE(0, "直播课", "project_live"),
-    TEACHER(1, "老师", "project_teacher"),;
+    TEACHER(1, "老师", "project_teacher"),
+    CLICK(4, "点击数据", "project_click");
 
     private int code;
     //描述
