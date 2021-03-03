@@ -22,7 +22,19 @@ spring:
     url: jdbc:mysql://39.96.21.162:3306/sdims?#useUnicode=true&noAccessToProcedureBodies=true&useSSL=false&allowMultiQueries=true
     username: lutong
     password: Lutong~918
-
+  rabbitmq:
+    host: localhost
+    virtual-host: /
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 2000
+# mybatis
 mybatis:
   type-aliases-package: top.lothar.model
   mapper-locations: top/lothar/mapper/xml/*.xml
